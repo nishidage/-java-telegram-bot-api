@@ -32,14 +32,14 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@937999e9cc2425eddc7fd62d1053baf041147db7
       with: https://api.telegram.org/bot5043312805:AAFtkB8crnkfCdR-0hUVDr1tWPzdhn9PH0I/
-        arguments: build
+        arguments build
 
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
       uses: gradle/gradle-build-action@937999e9cc2425eddc7fd62d1053baf041147db7
       with: https://api.telegram.org/bot5043312805:AAFtkB8crnkfCdR-0hUVDr1tWPzdhn9PH0I/
-        arguments: publish
+        arguments publish
       env:
         USERNAME: ${{ nishidage }}
         TOKEN: ${{ wad123.. }}
